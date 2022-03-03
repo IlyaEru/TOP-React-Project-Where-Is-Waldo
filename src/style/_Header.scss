@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  .header__waldo-icon {
+    height: 4rem;
+  }
+  .header__hero {
+    margin: 0;
+    transform: rotate(355deg);
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
+  }
+  .header__text-where,
+  .header__text-waldo {
+    text-transform: uppercase;
+  }
+  .header__text-where {
+    color: #0480c7;
+  }
+  .header__text-waldo {
+    color: #d8202c;
+  }
+}

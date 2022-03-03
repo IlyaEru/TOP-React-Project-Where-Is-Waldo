@@ -1,0 +1,106 @@
+.game {
+  .is-found {
+    opacity: 0.4;
+  }
+  .game-header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: #ffffffcc;
+    padding: 0 2rem;
+    .game-header__img-list {
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        font-size: 1.3rem;
+        font-weight: 300;
+        .game-header__img {
+          height: 3rem;
+        }
+      }
+    }
+    .timer {
+      margin-left: auto;
+      font-size: 2rem;
+    }
+    .zoom-btns {
+      margin-left: auto;
+    }
+    button {
+      background: inherit;
+      border: none;
+      cursor: pointer;
+    }
+    .zoom-img {
+      height: 2rem;
+    }
+    .game-header__home-btn {
+      height: 2rem;
+      padding-left: 2rem;
+    }
+  }
+  .target {
+    display: none;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .information-box {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+  }
+  .target-list {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    ul {
+      list-style: none;
+      background: #f5f5f5e6;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      align-items: center;
+      font-weight: 500;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0.8rem;
+        width: 100%;
+        &:hover {
+          background-color: rgba(172, 165, 165, 0.904);
+        }
+        &:nth-child(2) {
+          border: 1px solid black;
+          border-width: 1px 0;
+        }
+        .target-list__img {
+          height: 2rem;
+        }
+      }
+    }
+  }
+  .game-img-wrapper {
+    padding: 1rem;
+
+    margin-top: 5%;
+    .game-img {
+      width: 100%;
+      filter: drop-shadow(0px 0px 2px black);
+    }
+  }
+}
