@@ -21,6 +21,7 @@ export default function Game() {
   const [minutes, setMinutes] = useState(0);
   const [clickCoordinates, setClickCoordinates] = useState({ x: 0, y: 0 });
   const [isFinished, setIsFinished] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [characters, setCharacters] = useState({
     odlaw: { isFound: false },
     waldo: { isFound: false },
@@ -90,6 +91,11 @@ if (params.difficulty === 'easy') {
 } else {
   imgSrc = hardWaldoImg;
 }
+const handleMainImgLoad = () => {
+  setIsLoaded(true);
+  setMinutes(0);
+  setSeconds(0);
+};
 const handleInformationBox = (correct: string) => {
   const target: HTMLElement = document.querySelector('.target')!;
   const targetList: HTMLElement = document.querySelector('.target-list')!;
@@ -168,12 +174,21 @@ return (
           Odlaw
         </li>
       </ul>
-      <div className="timer">
-        {minutes > 9 ? minutes : `0${minutes}`}
-        :
-        {seconds > 9 ? seconds : `0${seconds}`}
+      {isLoaded ? (
+        <div className="timer">
+          {minutes > 9 ? minutes : `0${minutes}`}
+          :
+          {seconds > 9 ? seconds : `0${seconds}`}
+        </div>
+      )
+        : (
+          <div className="timer">
+            00
+            :
+            00
+          </div>
+        )}
 
-      </div>
       <div className="zoom-btns">
         <button title="Zoom in" onClick={handleZoomIn} type="button"><img className="zoom-img zoom-in" src={zoomInImg} alt="Zoom in" /></button>
         <button title="Zoom out" onClick={handleZoomOut} type="button"><img className="zoom-img zoom-out" src={zoomOutImg} alt="Zoom Out" /></button>
@@ -214,7 +229,7 @@ return (
           </li>
         </ul>
       </div>
-      <img className="game-img" role="presentation" onClick={handleImgClick} src={imgSrc} alt="where's waldo" />
+      <img onLoad={handleMainImgLoad} className="game-img" role="presentation" onClick={handleImgClick} src={imgSrc} alt="where's waldo" />
     </div>
   </main>
 );

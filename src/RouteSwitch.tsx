@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Header from './components/Header';
 import Game from './components/Game';
@@ -7,7 +7,7 @@ import Leaderboard from './components/Leaderboard';
 
 export default function RouteSwitch() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -29,6 +29,6 @@ export default function RouteSwitch() {
         />
         <Route path="game/:difficulty" element={<Game />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
