@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TOP-React-Project-Where-Is-Waldo/static/css/main.e5bd698e.css",
-    "main.js": "/TOP-React-Project-Where-Is-Waldo/static/js/main.37eb77e0.js",
+    "main.css": "/TOP-React-Project-Where-Is-Waldo/static/css/main.36a268e2.css",
+    "main.js": "/TOP-React-Project-Where-Is-Waldo/static/js/main.ced52d2b.js",
     "static/media/waldo-img-1-full.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-1-full.36c810d18cce9f1797f7.jpg",
     "static/media/waldo-img-2-full.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-2-full.2d518fa857f7d216e31b.jpg",
     "static/media/waldo-img-3-full.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-3-full.f99ea764c1447425228c.jpg",
@@ -18,11 +18,11 @@
     "static/media/zoom-out.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/zoom-out.8b9064918c3c663a9ea3732fcc2fa3bb.svg",
     "static/media/home.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/home.eb8734f568d159819859754a575e9101.svg",
     "index.html": "/TOP-React-Project-Where-Is-Waldo/index.html",
-    "main.e5bd698e.css.map": "/TOP-React-Project-Where-Is-Waldo/static/css/main.e5bd698e.css.map",
-    "main.37eb77e0.js.map": "/TOP-React-Project-Where-Is-Waldo/static/js/main.37eb77e0.js.map"
+    "main.36a268e2.css.map": "/TOP-React-Project-Where-Is-Waldo/static/css/main.36a268e2.css.map",
+    "main.ced52d2b.js.map": "/TOP-React-Project-Where-Is-Waldo/static/js/main.ced52d2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5bd698e.css",
-    "static/js/main.37eb77e0.js"
+    "static/css/main.36a268e2.css",
+    "static/js/main.ced52d2b.js"
   ]
 }
