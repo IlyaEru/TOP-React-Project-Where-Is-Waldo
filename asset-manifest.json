@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/TOP-React-Project-Where-Is-Waldo/static/css/main.e5bd698e.css",
+    "main.js": "/TOP-React-Project-Where-Is-Waldo/static/js/main.f5b35d40.js",
+    "static/media/waldo-img-1-full.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-1-full.36c810d18cce9f1797f7.jpg",
+    "static/media/waldo-img-2-full.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-2-full.2d518fa857f7d216e31b.jpg",
+    "static/media/waldo-img-3-full.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-3-full.f99ea764c1447425228c.jpg",
+    "static/media/waldo-img-1-small.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-1-small.4c01543ee9be1ba472fd.jpg",
+    "static/media/waldo-img-2-small.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-2-small.a56d15f66bada273ddda.jpg",
+    "static/media/waldo-img-3-small.jpg": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-img-3-small.79b0033dcb5843f9f20c.jpg",
+    "static/media/waldo-icon.png": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo-icon.b0cc6eeb51e6d57b95cd.png",
+    "static/media/odlaw.png": "/TOP-React-Project-Where-Is-Waldo/static/media/odlaw.6a6ffe9ecf2cab804a7b.png",
+    "static/media/wizard.png": "/TOP-React-Project-Where-Is-Waldo/static/media/wizard.075c4dc7fe8ee150efef.png",
+    "static/media/waldo.png": "/TOP-React-Project-Where-Is-Waldo/static/media/waldo.05c56e4b8023c6e2837d.png",
+    "static/media/controller.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/controller.15f3960b729ebda8309f3d1330c137bc.svg",
+    "static/media/leaderboard.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/leaderboard.61d77ea4e79ee880597a618eb7b2e6da.svg",
+    "static/media/zoom-in.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/zoom-in.3a93dde7bba853d35076658258d97b64.svg",
+    "static/media/zoom-out.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/zoom-out.8b9064918c3c663a9ea3732fcc2fa3bb.svg",
+    "static/media/home.svg": "/TOP-React-Project-Where-Is-Waldo/static/media/home.eb8734f568d159819859754a575e9101.svg",
+    "index.html": "/TOP-React-Project-Where-Is-Waldo/index.html",
+    "main.e5bd698e.css.map": "/TOP-React-Project-Where-Is-Waldo/static/css/main.e5bd698e.css.map",
+    "main.f5b35d40.js.map": "/TOP-React-Project-Where-Is-Waldo/static/js/main.f5b35d40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5bd698e.css",
+    "static/js/main.f5b35d40.js"
+  ]
+}
