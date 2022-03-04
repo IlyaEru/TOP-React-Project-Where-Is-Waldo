@@ -28,7 +28,7 @@ function App() {
           </Link>
         </div>
       </div>
-      <Link to="/leaderboard">
+      <Link className="home__leaderboard-link" to="/leaderboard">
         <div className="home__leaderboard-logo">
           <img className="home__leaderboard-logo-img" src={leaderboardImg} alt="Leaderboard" />
           Leaderboard

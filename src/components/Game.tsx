@@ -183,9 +183,7 @@ return (
       )
         : (
           <div className="timer">
-            00
-            :
-            00
+            00:00
           </div>
         )}
 

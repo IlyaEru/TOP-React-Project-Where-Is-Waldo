@@ -39,13 +39,13 @@ main.home {
       }
     }
   }
+  .home__leaderboard-link {
+    margin-top: 4rem;
+  }
   .home__leaderboard-logo {
     display: flex;
     align-items: center;
-    margin-top: 50%;
-    @media (max-width: 1000px) {
-      margin-top: 20%;
-    }
+
     font-size: 3.5rem;
     @media (max-width: 600px) {
       font-size: 2rem;
