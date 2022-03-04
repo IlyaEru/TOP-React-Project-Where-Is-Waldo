@@ -1,0 +1,107 @@
+.finish-screen {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background: #f5f5f5c7;
+  div {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    &:nth-child(2) {
+      border: 1px solid rgba(128, 128, 128, 0.726);
+      border-width: 1px 0;
+      flex: 1;
+    }
+  }
+  .finish-screen__content {
+    background-color: #fff;
+    // height: 30%;
+    width: 50%;
+    @media (max-width: 600px) {
+      width: 80%;
+    }
+    margin-top: -10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .finish-screen__content-header {
+      h3 {
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 500;
+      }
+    }
+    .finish-screen__content-name {
+      font-size: 1.5rem;
+      font-weight: 300;
+      .input {
+        position: relative;
+        display: flex;
+        padding: 1rem 20%;
+        margin-top: 2rem;
+        #name-input {
+          width: 100%;
+          border: 1px solid rgba(128, 128, 128, 0.123);
+          border-bottom: 5px solid #047fc786;
+          border-radius: 5px;
+          box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+          &:hover {
+            box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+          }
+          &:focus,
+          &:not(:placeholder-shown) {
+            box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
+              0px 0px 8px rgba(0, 0, 0, 0.2);
+            outline: none;
+            border-bottom: 5px solid #0480c7;
+            & ~ label {
+              opacity: 1;
+              transform: translateY(-105%);
+              margin-left: 0;
+            }
+          }
+        }
+        label {
+          transition: all 0.4s;
+          position: absolute;
+          opacity: 0.6;
+          margin-left: 5px;
+        }
+      }
+    }
+    .finish-screen__content-bts {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+      .btn {
+        font-size: 1.4rem;
+        padding: 0.9rem 1.8rem;
+        &:hover,
+        &:focus {
+          color: inherit;
+        }
+      }
+      .cancel-btn {
+        background-color: rgba(128, 128, 128, 0.5);
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
+        }
+      }
+      .submit-btn {
+        background-color: rgba(152, 233, 120, 0.5);
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 10px rgba(152, 233, 120, 0.8);
+        }
+      }
+    }
+  }
+}

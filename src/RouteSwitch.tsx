@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Header from './components/Header';
 import Game from './components/Game';
+import Leaderboard from './components/Leaderboard';
 
 export default function RouteSwitch() {
   return (
@@ -14,6 +15,15 @@ export default function RouteSwitch() {
             <>
               <Header />
               <App />
+            </>
+            )}
+        />
+        <Route
+          path="/leaderboard"
+          element={(
+            <>
+              <Header />
+              <Leaderboard />
             </>
             )}
         />

@@ -28,12 +28,6 @@ body,
   cursor: pointer;
   text-decoration: none;
   transition: all 250ms;
-  &:hover,
-  &:focus {
-    border-color: rgba(255, 255, 255, 0.15);
-    box-shadow: rgba(255, 255, 255, 0.1) 0 4px 12px;
-    color: rgba(255, 255, 255, 0.65);
-  }
   &:active {
     transform: scale(0.97);
   }

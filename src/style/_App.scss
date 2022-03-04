@@ -1,7 +1,9 @@
 main.home {
   flex: 1;
-  background: #0480c70d;
   padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .home__game-levels {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +25,9 @@ main.home {
       .level-img {
         max-width: 100%;
         width: 30rem;
+        @media (max-width: 1000px) {
+          width: 20rem;
+        }
         transition: all 0.5s;
         &:hover {
           box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.623);
@@ -31,6 +36,26 @@ main.home {
         &:active {
           transform: scale(1);
         }
+      }
+    }
+  }
+  .home__leaderboard-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 50%;
+    @media (max-width: 1000px) {
+      margin-top: 20%;
+    }
+    font-size: 3.5rem;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+    color: goldenrod;
+    font-weight: 300;
+    .home__leaderboard-logo-img {
+      height: 8rem;
+      @media (max-width: 600px) {
+        height: 5rem;
       }
     }
   }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import smallWaldoImg1 from './img/waldo-img-1-small.jpg';
 import smallWaldoImg2 from './img/waldo-img-2-small.jpg';
 import smallWaldoImg3 from './img/waldo-img-3-small.jpg';
+import leaderboardImg from './img/leaderboard.svg';
 
 function App() {
   return (
@@ -27,6 +28,12 @@ function App() {
           </Link>
         </div>
       </div>
+      <Link to="/leaderboard">
+        <div className="home__leaderboard-logo">
+          <img className="home__leaderboard-logo-img" src={leaderboardImg} alt="Leaderboard" />
+          Leaderboard
+        </div>
+      </Link>
     </main>
   );
 }

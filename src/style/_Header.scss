@@ -1,7 +1,8 @@
 header {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
   .header__waldo-icon {
     height: 4rem;
   }

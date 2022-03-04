@@ -6,23 +6,36 @@
     display: flex;
     align-items: center;
     position: fixed;
+    @media (max-width: 550px) {
+      position: initial;
+    }
     z-index: 2;
-    width: 100%;
+    width: 100vw;
     background: #ffffffcc;
     padding: 0 2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
     .game-header__img-list {
       display: flex;
       gap: 1rem;
       margin: 0;
+      justify-content: flex-start;
+      padding: 0;
+
       li {
         display: flex;
         align-items: center;
         flex-direction: column;
 
         font-size: 1.3rem;
+        @media (max-width: 550px) {
+          font-size: 1rem;
+        }
         font-weight: 300;
         .game-header__img {
           height: 3rem;
+          @media (max-width: 550px) {
+            height: 2rem;
+          }
         }
       }
     }
@@ -44,6 +57,9 @@
     .game-header__home-btn {
       height: 2rem;
       padding-left: 2rem;
+      @media (max-width: 550px) {
+        padding-left: 1rem;
+      }
     }
   }
   .target {
@@ -96,8 +112,10 @@
   }
   .game-img-wrapper {
     padding: 1rem;
-
     margin-top: 5%;
+    @media (max-width: 1200px) {
+      margin-top: 10%;
+    }
     .game-img {
       width: 100%;
       filter: drop-shadow(0px 0px 2px black);

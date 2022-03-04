@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
+import FinishScreen from './FinishScreen';
 import mediumWaldoImg from '../img/waldo-img-1-full.jpg';
 import easyWaldoImg from '../img/waldo-img-2-full.jpg';
 import hardWaldoImg from '../img/waldo-img-3-full.jpg';
@@ -19,30 +20,34 @@ export default function Game() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [clickCoordinates, setClickCoordinates] = useState({ x: 0, y: 0 });
+  const [isFinished, setIsFinished] = useState(false);
   const [characters, setCharacters] = useState({
     odlaw: { isFound: false },
     waldo: { isFound: false },
     wizard: { isFound: false },
   });
-
+  let intervalId;
   useEffect(() => {
-    const timerInterval = setInterval(() => {
-      if (seconds === 59) {
-        setMinutes(minutes + 1);
-        setSeconds(0);
-      } else {
-        setSeconds(seconds + 1);
-      }
-    }, 1000);
+    if (isFinished === false) {
+      intervalId = setInterval(() => {
+        if (seconds === 59) {
+          setMinutes(minutes + 1);
+          setSeconds(0);
+        } else {
+          setSeconds(seconds + 1);
+        }
+      }, 1000);
+    }
+
     return () => {
-      clearInterval(timerInterval);
+      clearInterval(intervalId);
     };
   });
 
   useEffect(() => {
     const charName = Object.keys(characters);
     if (charName.find((char) => characters[char].isFound === false) === undefined) {
-      console.log('finished');
+      setIsFinished(true);
     }
   }, [characters]);
 
@@ -147,6 +152,7 @@ const handleZoomOut = () => {
 };
 return (
   <main className="game">
+    {isFinished ? <FinishScreen difficulty={params.difficulty} minutes={minutes} seconds={seconds} /> : ''}
     <div className="game-header">
       <ul className="game-header__img-list">
         <li className={characters.waldo.isFound ? 'is-found' : ''}>
